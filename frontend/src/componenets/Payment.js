@@ -92,7 +92,7 @@ const Payment = () => {
             {
               createOrder({shippingInfo,paymentInfo,orderInfo,cartItems});
             }
-           navigate("/orders");
+           navigate("/");
            dispatch(setLoading(false));
            payBtn.current.disabled=false;
            toast.success("Payment SuccessFull");
