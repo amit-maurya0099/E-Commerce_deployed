@@ -17,7 +17,7 @@ const fileUpload=require("express-fileupload")
  const port=process.env.PORT ; 
 
 app.use(cors({
-  origin:'http://localhost:3000',
+  origin:'https://e-commerce-frontend-topaz-five.vercel.app',
   method:["GET","PUT","POST","DELETE"],
   credentials:true
 }
