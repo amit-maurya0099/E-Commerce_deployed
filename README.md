@@ -9,16 +9,13 @@ This project is a full-fledged E-commerce platform built using the MERN stack (M
 ## Features
 - **User Authentication:** Users can register, login, and manage their profiles.
 - **Product Management:** Admins can add, update, and delete products.
+- **Search Functionality & filter:** Users can search for products by entering keywords in the search bar. The application filters the product list dynamically based on the search input. 
+- **Product Reviews and Ratings :** Allow users to leave reviews and ratings for products.
 - **Shopping Cart:** Users can add items to their cart, adjust quantities, and remove items.
 - **Checkout Process:** Users can review their orders, provide shipping details, and make payments.
 - **Order History:** Users can view their past orders and track their current orders.
+-  **Secure Payment Gateway:** Stripe payment gateway has been used for secure transactions.
 - **Admin Dashboard:** Admins can manage users, products, and view sales statistics.
-  
- ### Note:-
-  Payment gateway is yet to be integrated. This apps works fine on localhost but there were some issues related to cookies in production.
-
- ## Demo Video
- https://github.com/user-attachments/assets/6751db2c-479e-4b0c-b3e7-5bf26678caa2
 
 
  
@@ -28,6 +25,7 @@ This project is a full-fledged E-commerce platform built using the MERN stack (M
 - **Database:** MongoDB for storing user and product data.
 - **State Management:** Redux Toolkit for managing application state.
 - **Authentication:** JSON Web Tokens (JWT) for secure authentication.
+- **Payment Gateway:** Stripe is used
 
 
 ## Getting Started
@@ -43,7 +41,7 @@ To set up the E-Commerce on your local machine, follow the instructions below.
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/amit-maurya0099/E-commerce.git
+   https://github.com/amit-maurya0099/E-Commerce_deployed
    
     ```
 
@@ -68,7 +66,7 @@ To set up the E-Commerce on your local machine, follow the instructions below.
       ```bash
       npm start
       ```
-### Contributing
+
 
 Contributions to E-Commerce are welcome. If you have suggestions, find any bugs, or want to add new features, feel free to open an issue or submit a pull request.
 
