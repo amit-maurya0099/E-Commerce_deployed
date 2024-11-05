@@ -23,7 +23,7 @@ const UsersList = () => {
           try {
             dispatch(setLoading(true));
          
-            const response=await fetch(`http://localhost:4000/api/user/delete/${id}`,{
+            const response=await fetch(`https://e-commerce-backend-545f.onrender.com/api/user/delete/${id}`,{
               method:"DELETE",
               credentials:"include",
             })

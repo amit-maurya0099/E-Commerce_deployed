@@ -38,7 +38,7 @@ const UpdateOrder = () => {
       }
          
       try {
-        const response=await fetch(`http://localhost:4000/api/v1/order/update/${id}`,{
+        const response=await fetch(`https://e-commerce-backend-545f.onrender.com/api/v1/order/update/${id}`,{
             method:"PUT",
             headers:{
                 "Content-Type":"application/json"

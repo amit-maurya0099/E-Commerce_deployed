@@ -92,7 +92,7 @@ const login=async (req,res)=>{
      
       await user.save({validateBeforeSave:false});
      
-      const resetPasswordUrl=`${process.env.FRONTEND_URL}http://localhost:4000/api/user/password/reset/${resetToken}`
+      const resetPasswordUrl=`${process.env.FRONTEND_URL}https://e-commerce-backend-545f.onrender.com/api/user/password/reset/${resetToken}`
       const message=`your password token is :-"\n\n ${resetPasswordUrl}\n\n if you have not requested this mail then, please ignore it`
       
      

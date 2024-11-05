@@ -8,7 +8,7 @@ const useProductDetails=(id)=>{
     const getProductDetail=async()=>{
         dispatch(setLoading(true))
         try {
-            const response=await fetch(`http://localhost:4000/api/v1/product/details/${id}`,{
+            const response=await fetch(`https://e-commerce-backend-545f.onrender.com/api/v1/product/details/${id}`,{
                 method:"GET",
                 credentials:"include",
             })

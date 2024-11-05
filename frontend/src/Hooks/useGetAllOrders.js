@@ -10,7 +10,7 @@ const useGetAllOrders=()=>{
     const getAllOrders=async()=>{
     
         try {
-            const response=await fetch("http://localhost:4000/api/v1/order/all",{
+            const response=await fetch("https://e-commerce-backend-545f.onrender.com/api/v1/order/all",{
                 method:"GET",
                 credentials:"include",
             })

@@ -18,7 +18,7 @@ const ShowProfileCard = () => {
   const user=useSelector((store)=>store.users.user);
 
   const handleLogout = async () => {
-    const response = await fetch("http://localhost:4000/api/user/logout", {
+    const response = await fetch("https://e-commerce-backend-545f.onrender.com/api/user/logout", {
       method: "GET",
       credentials:"include",
     });

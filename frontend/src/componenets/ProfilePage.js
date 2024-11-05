@@ -16,7 +16,7 @@ const isAuthenticated=useSelector((store)=>store.users.isAuthenticated)
 const getProfileData = async () => {
    
     try {
-      const response = await fetch("http://localhost:4000/api/user/profile/details", {
+      const response = await fetch("https://e-commerce-backend-545f.onrender.com/api/user/profile/details", {
         method: "GET",
         credentials:"include",
       });

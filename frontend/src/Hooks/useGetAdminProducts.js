@@ -9,7 +9,7 @@ const useGetAdminProducts=()=>{
     const getAdminProducts=async()=>{
     
         try {
-            const response=await fetch("http://localhost:4000/api/v1/admin/products",{
+            const response=await fetch("https://e-commerce-backend-545f.onrender.com/api/v1/admin/products",{
                 method:"GET",
                 credentials:"include",
             })

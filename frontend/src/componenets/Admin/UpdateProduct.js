@@ -59,7 +59,7 @@ images.forEach((image)=>{
 
 try {
     dispatch(setLoading(true))
-    const response=await fetch(`http://localhost:4000/api/v1/product/update/${id}`,{
+    const response=await fetch(`https://e-commerce-backend-545f.onrender.com/api/v1/product/update/${id}`,{
         method:"PUT",
         credentials:"include",
         body:myForm

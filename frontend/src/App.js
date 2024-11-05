@@ -50,7 +50,7 @@ function App() {
   
   const getStripeKey=async()=>{
     try {
-      const response=await fetch("http://localhost:4000/api/v1/order/stripeapikey",{
+      const response=await fetch("https://e-commerce-backend-545f.onrender.com/api/v1/order/stripeapikey",{
         method:"GET",
         credentials:"include"
       });
@@ -124,7 +124,7 @@ function App() {
       <Route  path="/account/update" element={isAuthenticated ?<UpdateProfile/>:<Error/>}/>
       <Route  path="/password/update" element={isAuthenticated ?<UpdatePassword/>:<Error/>}/>
       <Route  path="/password/forgot" element={<ForgotPassword/>}/>
-      <Route  path="http://localhost:4000/api/user/password/reset/:token" element={<ProtectedRoute element={ResetPassword}/>}/>
+      <Route  path="https://e-commerce-backend-545f.onrender.com/api/user/password/reset/:token" element={<ProtectedRoute element={ResetPassword}/>}/>
       <Route path="/shipping" element={isAuthenticated ?<ShippingPage/>:<Error/>}/>
       <Route path="/orders" element={isAuthenticated ?<Order/>:
       <><div className="text-xl  flex justify-center items-center h-screen w-screen">

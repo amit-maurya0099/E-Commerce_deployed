@@ -11,9 +11,9 @@ const useAllProducts = (page,price,rating,category) => {
   const getAllProducts = async () => {
      dispatch(setLoading(true))
     try {
-       let link=`http://localhost:4000/api/v1/products?page=${page}&price[gte]=${price[0]}&price[lte]=${price[1]}&ratings[gte]=${rating}`
+       let link=`https://e-commerce-backend-545f.onrender.com/api/v1/products?page=${page}&price[gte]=${price[0]}&price[lte]=${price[1]}&ratings[gte]=${rating}`
        if(category){
-        link=`http://localhost:4000/api/v1/products?page=${page}&price[gte]=${price[0]}&price[lte]=${price[1]}&category=${category}`
+        link=`https://e-commerce-backend-545f.onrender.com/api/v1/products?page=${page}&price[gte]=${price[0]}&price[lte]=${price[1]}&category=${category}`
        }
       const response =await fetch(link,{
         method:"GET",

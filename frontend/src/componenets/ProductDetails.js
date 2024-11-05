@@ -78,7 +78,7 @@ const ProductDetails = () => {
    
     setOpen(false);
   try {
-    const response=await fetch("http://localhost:4000/api/v1/product/review",{
+    const response=await fetch("https://e-commerce-backend-545f.onrender.com/api/v1/product/review",{
       method:"POST",
       credentials:"include",
       body:myForm

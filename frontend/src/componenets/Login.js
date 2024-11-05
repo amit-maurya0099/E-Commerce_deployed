@@ -35,7 +35,7 @@ const Login = () => {
     e.preventDefault();
     try {
       dispatch(setLoading(true));
-      const response = await fetch("http://localhost:4000/api/user/login", {
+      const response = await fetch("https://e-commerce-backend-545f.onrender.com/api/user/login", {
         method: "POST",
         credentials:"include",
         headers: {

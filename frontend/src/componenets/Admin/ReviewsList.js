@@ -43,7 +43,7 @@ const rows=[]
 const handleFormSubmit=async(e)=>{
     e.preventDefault();
     try {
-        const response=await fetch(`http://localhost:4000/api/v1/product/reviews?id=${id}`,{
+        const response=await fetch(`https://e-commerce-backend-545f.onrender.com/api/v1/product/reviews?id=${id}`,{
             method:"GET",
             credentials:"include",
         })
@@ -61,7 +61,7 @@ const handleFormSubmit=async(e)=>{
 }
 const deleteReviewHandler=async(revId)=>{
     try {
-        const response=await fetch(`http://localhost:4000/api/v1/product/review?productId=${id}&revId=${revId}`,{
+        const response=await fetch(`https://e-commerce-backend-545f.onrender.com/api/v1/product/review?productId=${id}&revId=${revId}`,{
             method:"DELETE"
         })
         console.log(response)
