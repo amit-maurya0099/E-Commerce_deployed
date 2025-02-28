@@ -17,7 +17,7 @@ const fileUpload=require("express-fileupload")
  const port=process.env.PORT ; 
 
 app.use(cors({
-  origin:'https://e-commerce-deployed.vercel.app',
+  origin:"https://e-commerce-deployed.vercel.app",
   method:["GET","PUT","POST","DELETE"],
   credentials:true
 }
